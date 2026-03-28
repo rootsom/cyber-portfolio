@@ -2,16 +2,73 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 
 const projectData = [
+{
+  title: 'Red Team Simulation – Advanced Adversary Emulation',
+
+  description: 'Simulated a full-scale Advanced Persistent Threat (APT) attack against a corporate-like infrastructure, replicating real-world attacker methodologies across the entire kill chain—from reconnaissance and initial access to privilege escalation, lateral movement, persistence, and data exfiltration.',
+
+  highlights: [
+    'Performed reconnaissance and attack surface mapping',
+    'Exploited vulnerabilities for initial foothold',
+    'Executed privilege escalation and credential dumping',
+    'Conducted lateral movement across Active Directory environment',
+    'Simulated persistence techniques and data exfiltration',
+    'Analyzed attack paths and security weaknesses in enterprise setup'
+  ],
+
+  tools: [
+    'Metasploit',
+    'Empire',
+    'BloodHound',
+    'Mimikatz',
+    'Nmap',
+    'Burp Suite',
+    'PowerView',
+    'CrackMapExec',
+    'Wireshark'
+  ],
+
+  outcome: 'Demonstrated end-to-end adversary simulation in a controlled lab environment, identifying critical security gaps and providing actionable remediation strategies aligned with real-world enterprise defense practices.'
+},
 	{
-		title: 'Red Team Simulation',
-		description: 'Simulated APT attack against corporate infrastructure.',
-		tools: ['Metasploit', 'Empire', 'BloodHound'],
-	},
-	{
-		title: 'Web App Pentest',
-		description: 'Discovered and reported XSS, SQLi in production apps.',
-		tools: ['Burp Suite', 'SQLMap', 'Nmap'],
-	},
+  title: 'Red Team Simulation – Enterprise Active Directory Compromise',
+
+  description: 'Executed a full-scope red team engagement simulating a targeted Advanced Persistent Threat (APT) attack against a Windows-based enterprise Active Directory environment. Emulated a real-world attacker by chaining multiple attack vectors to achieve initial access, domain dominance, persistence, and controlled data exfiltration while evading basic security controls.',
+
+  scenario: 'Assumed the role of an external attacker targeting a mid-size organization with exposed services. Gained initial foothold via vulnerable web application and misconfigured services, followed by internal reconnaissance, credential harvesting, and full domain compromise of Active Directory infrastructure.',
+
+  highlights: [
+    'Performed external reconnaissance and attack surface enumeration',
+    'Exploited web vulnerabilities and misconfigurations for initial access',
+    'Established command & control (C2) channel for persistence',
+    'Executed privilege escalation and credential dumping (LSASS memory)',
+    'Enumerated and mapped Active Directory attack paths',
+    'Performed lateral movement using pass-the-hash and remote execution',
+    'Escalated privileges to Domain Administrator level',
+    'Simulated persistence via scheduled tasks and registry modifications',
+    'Conducted controlled data exfiltration and log evasion techniques',
+    'Documented full attack chain with remediation recommendations'
+  ],
+
+  tools: [
+    'Metasploit',
+    'Empire',
+    'BloodHound',
+    'Mimikatz',
+    'Nmap',
+    'Burp Suite',
+    'PowerView',
+    'CrackMapExec',
+    'Wireshark',
+    'Responder',
+    'Impacket',
+    'Netcat',
+    'Gobuster',
+    'Dirsearch'
+  ],
+
+  outcome: 'Successfully achieved full Active Directory compromise in a controlled lab, demonstrating real-world attack techniques and identifying critical weaknesses in authentication, privilege management, and network segmentation. Delivered a detailed report outlining exploitation steps, impact analysis, and actionable remediation strategies aligned with enterprise security standards.'
+},
 ];
 
 const Projects = () => {
